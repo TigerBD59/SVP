@@ -1,0 +1,17 @@
+{
+  "name": "choyes",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "refresh-t2hub-session": "node scripts/refresh-t2hub-session.mjs",
+    "refresh-t2hub-sync": "node scripts/refresh-t2hub-session.mjs && node scripts/sync-t2hub-session.mjs --write",
+    "auto-refresh-t2hub": "node scripts/auto-refresh-t2hub.mjs",
+    "auto-refresh-t2hub:sync": "node scripts/auto-refresh-t2hub.mjs --sync",
+    "capture-t2hub-session": "node scripts/capture-t2hub-session.cjs",
+    "capture-booking": "node scripts/capture-booking-flow.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1",
+    "supabase": "^2.116.0"
+  }
+}
